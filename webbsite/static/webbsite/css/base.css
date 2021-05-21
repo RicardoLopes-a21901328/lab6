@@ -1,0 +1,7 @@
+header {
+   position: fixed;
+   bottom: 30px;
+   width: 100%;
+    background: aqua;
+   text-align: center;
+}
