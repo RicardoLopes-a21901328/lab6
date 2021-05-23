@@ -121,6 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'website/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'website/staticfiles')
+ALLOWED_HOSTS = ['*']
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
