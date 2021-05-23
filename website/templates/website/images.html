@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'website/home.html' %}
+{% load static %}
+
+{% block main %}
+    <h3>Imagens</h3>
+    <p>aqui estão uma lista de imagens</p>
+    <p>    <img src="{% static 'website/images/vampiro.png'%}" alt = "My image">
+    <img src="{% static 'website/images/raven-removebg-preview.png'%}" alt = "My image">
+    <img src="{% static 'website/images/charge.png'%}" alt = "My image"></p>
+    <p></p>
+    <p></p>
+{% endblock %}
+</html>

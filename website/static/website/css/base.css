@@ -1,0 +1,18 @@
+body{
+    background-color: cadetblue;
+}
+footer {
+   position: fixed;
+   bottom: 30px;
+   width: 100%;
+   text-align: center;
+}
+body > article {
+    max-width: 800px;
+    margin: auto;
+}
+header {
+   width: 100%;
+   text-align: center;
+    background-color: azure;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content="Student">
+    <meta name = "keywords" content="Viking">
+    <meta name = "description" content="Website de projecto">
+    <meta name = "location" content="ulusofona">
+    <title> First webb </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<header class="jumbotron text-center">
+        <h1>Home page</h1>
+        <nav>
+            <a href="{% url 'home' %}" class="btn btn-info">Home</a>
+            <a href="{% url 'Coment' %}" class="btn btn-info">Texto</a>
+            <a href="{% url 'image' %}" class="btn btn-info">images</a>
+            <a href="{% url 'Media' %}" class="btn btn-info">media</a>
+        </nav>
+</header>
+<body>
+<article class="container">
+    <main class="col-sm-6">
+        {% block main %}
+        <a>A minha primeira pagina django</a>
+        {% endblock %}
+    </main>
+    <aside class="col-sm-6">
+        <img src="{% static 'website/images/vampiro.png'%}" alt = "My image">
+    </aside>
+</article>
+</body>
+<footer>
+    <h2>Student of <a href="https://www.ulusofona.pt/">ulusofona</a> 2021</h2>
+</footer>
+</html>
