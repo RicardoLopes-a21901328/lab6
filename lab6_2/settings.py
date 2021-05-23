@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-=t3k7x-%i+rk6$j&qd!%b0z(%&r@%mb*xi)d23&728%x&ic216
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -48,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'lab6_2.urls'
@@ -121,7 +121,6 @@ USE_TZ = True
 
 STATIC_URL = 'website/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'website/staticfiles')
-ALLOWED_HOSTS = ['*']
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
